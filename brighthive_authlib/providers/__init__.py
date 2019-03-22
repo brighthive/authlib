@@ -10,4 +10,6 @@ Note:
 """
 
 from brighthive_authlib.providers.provider import OAuth2Provider
+from brighthive_authlib.providers.provider_error import OAuth2ProviderError
 from brighthive_authlib.providers.auth_zero_provider import AuthZeroProvider
+from brighthive_authlib.providers.provider_factory import OAuth2ProviderFactory
