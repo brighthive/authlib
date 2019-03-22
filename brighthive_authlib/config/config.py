@@ -3,7 +3,7 @@
 """
 
 
-class Config(object):
+class AuthLibConfiguration(object):
     """Configuration class.
 
     This class encapsulates all the necessary information needed by
@@ -12,14 +12,15 @@ class Config(object):
     Args:
         provider (str): Name of the OAuth 2.0 provider.
         base_url (str): Base URL for the OAuth 2.0 provider.
-        jwks_url (str): URL for the JSON web token keys.
+        jwks_url (str): URL for retrieving the application JSON Web Key Set.
         algorithms (list): Accepted JWT algorithms.
-        audience (str): Audience (e.g O)
-
+        audience (str): OAuth 2.0 audience parameter.
 
     """
 
-    def __init__(self, provider: str, base_url: str, jwks_url: str, algorithms: list, audience: str = None):
+    def __init__(self, provider: str = None, base_url: str = None,
+                 jwks_url: str = None, algorithms: list = None,
+                 audience: str = None):
         self.provider = provider
         self.base_url = base_url
         self.jwks_url = jwks_url
