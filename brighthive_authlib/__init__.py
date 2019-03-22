@@ -1,5 +1,3 @@
 from brighthive_authlib.config import AuthLibConfiguration
-from brighthive_authlib.providers import OAuth2ProviderError, AuthZeroProvider, OAuth2ProviderFactory
-
-# from brighthive_authlib.config.config import Config
-# from brighthive_authlib.providers.auth_zero import token_required
+from brighthive_authlib.providers import AuthZeroProvider, OAuth2ProviderFactory, OAuth2ProviderError
+from brighthive_authlib.decorators.token_required_decorator import token_required
