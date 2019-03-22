@@ -6,7 +6,7 @@ libray.
 """
 
 import os
-from brighthive_authlib.config import Config
+from brighthive_authlib.config import AuthLibConfiguration
 
 
 class OAuth2Provider(object):
@@ -29,11 +29,11 @@ class OAuth2Provider(object):
         self.algorithms = None
         self.audience = None
 
-    def from_object(self, obj: Config):
+    def from_object(self, obj: AuthLibConfiguration):
         """Configure the library from a configuration object.
 
         Args:
-            obj (Config): A configuration object to pull configurations from.
+            obj (AuthLibConfiguration): A configuration object to pull configurations from.
 
         """
 

@@ -1,18 +1,14 @@
-# """Auth0 OAuth 2.0 Provider.
+"""Auth0 OAuth 2.0 Provider.
 
-# ""
+Implementation of an Auth0 OAuth 2.0 Provier.
+
+"""
+
+from brighthive_authlib.providers import OAuth2Provider
 
 
-# # from flask import request
-# # from functools import wraps
+class AuthZeroProvider(OAuth2Provider):
+    """Auth0 OAuth 2.0 Provider."""
 
-
-# # def token_required(f):
-# #     @wraps(f)
-# #     def decorated(*args, **kwargs):
-# #         auth_header = request.headers.get('Authorization', None)
-# #         if auth_header is not None:
-# #             print('No header')
-# #         else:
-# #             return f(*args, **kwargs)
-# #     return decorated
+    def __init__(self):
+        super().__init__()
