@@ -10,3 +10,10 @@
 
 # development crud
 **/sandbox.py
+**/NOTES
+
+# build
+build/
+dist/
+*.egg-info/
+requirements.txt

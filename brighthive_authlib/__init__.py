@@ -1,0 +1,1 @@
+from brighthive_authlib.providers.auth_zero import token_required

@@ -7,6 +7,7 @@ name = "pypi"
 requests = "*"
 pyjwt = "*"
 python-jose-cryptodome = "*"
+flask = "*"
 
 [dev-packages]
 "autopep8" = "*"
@@ -14,6 +15,9 @@ pycodestyle = "*"
 expects = "*"
 pytest = "*"
 pytest-cov = "*"
+setuptools = "*"
+wheel = "*"
+twine = "*"
 
 [requires]
 python_version = "3.7"
