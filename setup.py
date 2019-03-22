@@ -13,7 +13,7 @@ setuptools.setup(
     description='BrightHive API Authorization and Authentication Library',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/brighthive/authlib',
+    url='https://github.com/brighthive/brighthive-authlib',
     packages=setuptools.find_packages(),
     install_requires=[
         'flask',
