@@ -7,17 +7,17 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='brighthive-authlib',
-    version='0.0.15',
+    version='1.0.1',
     author='Gregory Mundy',
     author_email='greg@brighthive.io',
     description='BrightHive API Authorization and Authentication Library',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url='https://github.com/brighthive/brighthive-authlib',
+    url='https://github.com/brighthive/authlib',
     packages=setuptools.find_packages(),
     install_requires=[
         'flask',
-        'pyjwt',
+        'python-jose-cryptodome',
         'requests'
     ],
     classifiers=[
