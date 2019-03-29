@@ -5,8 +5,10 @@ name = "pypi"
 
 [packages]
 requests = "*"
-python-jose-cryptodome = "*"
 flask = "*"
+update = "*"
+python-jose = {extras = ["pycryptodome"], version = "*"}
+pycryptodome = "*"
 
 [dev-packages]
 "autopep8" = "*"

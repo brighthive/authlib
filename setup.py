@@ -17,7 +17,8 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     install_requires=[
         'flask',
-        'python-jose-cryptodome',
+        'pycryptodome',
+        'python-jose[pycryptodome]',
         'requests'
     ],
     classifiers=[
