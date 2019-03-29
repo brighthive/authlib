@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "f3bfcb9876a71525929de243ca717cf25f3582fa9f1cacb6e10d7e4a9ea566a7"
+            "sha256": "463caac762e98270926d11848b95159be30b802d98e5139a4d528d85e8eb947f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -125,14 +125,6 @@
                 "sha256:c292deeca9176c162e5a8e19be9c60edb99e855dbad3ea032f94e23249873ba6"
             ],
             "version": "==3.3.1"
-        },
-        "pyjwt": {
-            "hashes": [
-                "sha256:5c6eca3c2940464d106b99ba83b00c6add741c9becaec087fb7ccdefea71350e",
-                "sha256:8d59a976fb773f3e6a39c85636357c4f0e242707394cadadd9814f5cbaa20e96"
-            ],
-            "index": "pypi",
-            "version": "==1.7.1"
         },
         "python-jose-cryptodome": {
             "hashes": [
@@ -275,11 +267,11 @@
         },
         "more-itertools": {
             "hashes": [
-                "sha256:0125e8f60e9e031347105eb1682cef932f5e97d7b9a1a28d9bf00c22a5daef40",
-                "sha256:590044e3942351a1bdb1de960b739ff4ce277960f2425ad4509446dbace8d9d1"
+                "sha256:2112d2ca570bb7c3e53ea1a35cd5df42bb0fd10c45f0fb97178679c3c03d64c7",
+                "sha256:c3e4748ba1aad8dba30a4886b0b1a2004f9a863837b8654e7059eebf727afa5a"
             ],
             "markers": "python_version > '2.7'",
-            "version": "==6.0.0"
+            "version": "==7.0.0"
         },
         "pkginfo": {
             "hashes": [
