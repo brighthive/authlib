@@ -106,13 +106,11 @@ To set up a development environment, clone the repository and create a virtual e
 ```bash
 git clone git@github.com:brighthive/tpot-abacus-api.git
 cd tpot-abacus-api
-pipenv --three
 ```
 
-Install Python dependencies.
+Install Python project and development dependencies.
 
 ```bash
-pipenv install
 pipenv install --dev
 ```
 
