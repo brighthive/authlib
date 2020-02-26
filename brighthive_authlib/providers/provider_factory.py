@@ -6,7 +6,7 @@ providers on demand.
 """
 
 from brighthive_authlib.config import AuthLibConfiguration
-from brighthive_authlib.providers import AuthZeroProvider, OAuth2ProviderError
+from brighthive_authlib.providers import AuthZeroProvider, BrightHiveProvider, OAuth2ProviderError
 
 
 class OAuth2ProviderFactory(object):
@@ -32,6 +32,8 @@ class OAuth2ProviderFactory(object):
 
         if str(provider).upper() == 'AUTH0':
             provider = AuthZeroProvider()
+        elif str(provider).upper() == 'BRIGHTHIVE':
+            provider = BrightHiveProvider()
         else:
             raise OAuth2ProviderError(
                 'Unknown OAuth 2.0 Provider: {}'.format(str(provider).upper()))
