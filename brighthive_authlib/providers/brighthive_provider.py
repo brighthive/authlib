@@ -7,7 +7,7 @@ Implementation of a BrightHive OAuth 2.0 Provier.
 import requests
 import json
 from functools import wraps, partial
-from flask import request
+from flask import request, Response
 from brighthive_authlib.providers import OAuth2Provider, OAuth2ProviderError
 
 
@@ -24,9 +24,13 @@ class BrightHiveProvider(OAuth2Provider):
         try:
             headers = {'content-type': 'application/json'}
             validate_ep = f'{self.base_url}/oauth/validate'
+            print(validate_ep)
             payload = {'token': token}
-            query = requests.post(validate_ep, data=payload, headers=headers)
+            query = requests.post(validate_ep, data=json.dumps(payload), headers=headers)
             resp = query.json()
-            return str(resp['messages']['valid']).lower() == 'true'
+            if resp['messages']['valid']:
+                return True
+            else:
+                raise OAuth2ProviderError('Access Denied')
         except Exception:
             raise OAuth2ProviderError('Access Denied')
