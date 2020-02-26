@@ -7,7 +7,7 @@ with open('README.md', 'r') as f:
 
 setuptools.setup(
     name='brighthive-authlib',
-    version='1.0.3',
+    version='1.0.5',
     author='Gregory Mundy',
     author_email='greg@brighthive.io',
     description='BrightHive API Authorization and Authentication Library',
