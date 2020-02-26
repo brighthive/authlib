@@ -52,7 +52,6 @@ class AuthZeroProvider(OAuth2Provider):
                         token_scopes = unverified_claims['scope'].split()
                         for scope in scopes:
                             if scope not in token_scopes:
-                                print(scope)
                                 raise OAuth2ProviderError(
                                     'Required scope ({}) is not present for this client'.format(scope))
                     return True
