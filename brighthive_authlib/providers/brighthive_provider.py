@@ -24,7 +24,6 @@ class BrightHiveProvider(OAuth2Provider):
         try:
             headers = {'content-type': 'application/json'}
             validate_ep = f'{self.base_url}/oauth/validate'
-            print(validate_ep)
             payload = {'token': token}
             query = requests.post(validate_ep, data=json.dumps(payload), headers=headers)
             resp = query.json()

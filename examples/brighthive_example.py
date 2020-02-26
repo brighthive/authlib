@@ -7,7 +7,7 @@ from brighthive_authlib import OAuth2ProviderError, OAuth2ProviderFactory, AuthL
 
 # Warning: Testing purposes only. These attributes need to be protected.
 PROVIDER = 'BRIGHTHIVE'
-OAUTH2_URL = 'https://path/to/brighthive/auth/server'
+OAUTH2_URL = 'https://path/to/brighthive/authserver'
 
 # Build the Auth Service Configuration Object
 auth_config = AuthLibConfiguration(
